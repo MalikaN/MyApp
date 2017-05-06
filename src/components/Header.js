@@ -2,20 +2,23 @@ import React from 'react'
 import { NavLink } from 'react-router-dom';
 
 
+const divStyle = {
+  
+  'border-radius' :'0px',
+};
 
 
-
-const Header =() =>{
+const Header =() =>(
 <div>
-<nav className="navbar navbar-default">
+<nav className="navbar navbar-default" style={divStyle}>
   <div className="container-fluid">
     <div className="navbar-header">
-      <a className="navbar-brand" href="#">Brand</a>
+    <NavLink className="navbar-brand" to="/">My Site</NavLink>
     </div>
 
     <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul className="nav navbar-nav">
-        <li className="active"><NavLink to="/">Create post</NavLink></li>
+        <li className="active"><NavLink to="/content">Post</NavLink></li>
       </ul>
       <ul className="nav navbar-nav navbar-right">
         <li><a href="#">Sign in</a></li>
@@ -24,6 +27,6 @@ const Header =() =>{
   </div>
 </nav>
 </div>
-}
+)
 
 export default Header;
