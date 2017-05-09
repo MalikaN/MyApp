@@ -8,7 +8,10 @@
     "react-dom": "^15.5.4",
     "react-router-dom": "^4.1.1",
     "redux-router": "^2.1.2",
-    "xml2js": "^0.4.17"
+    "axios": "^0.16.1",
+    "enzyme": "^2.8.2",
+    "enzyme-to-json": "^1.5.1",
+     "react-test-renderer": "^15.5.4"
   },
   "devDependencies": {
     "react-scripts": "0.9.5"
